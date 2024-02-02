@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: wheat;
+}
+
+section{
+    height: 100vh;
+}
+
+nav{
+    margin: 5px 5px 20px;
+    padding: 20px;
+    border: 1px solid red;
+    
+
+    & ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        
+        & li a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+aside{
+    max-width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    & .side{
+        margin: 50px;
+        text-align: center;
+
+        & h1{
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            font-size: 3.5em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        & h4{
+            font-size: 2.3rem;
+            padding: 10px;
+        }
+        & .search input{
+            width: 180px;
+            height: 35px;
+            border-radius: 20px 20px 20px 20px ;
+            margin: 20px;
+        }
+        & p{
+            padding: 5px;
+
+            & span{
+                color: rgb(0, 217, 255);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+main{
+    position: absolute;
+    left: 550px;
+    border: 1px solid red;
+
+    & h1{
+        margin: 30px;
+        font-size: 25px;
+    }
+    & .tren{
+        display: flex;
+        justify-content: center;
+        border: 1px solid red;
+        
+        & .list{
+            width: 60%;
+            height: 180px;
+            margin: 25px;
+            background-color: aqua;
+            
+            border-radius: 0 60px 0 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+            & img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.footer{
+    margin-top: 90px;
+    padding: 30px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    bottom: -300px;
+    border: 1px solid red;
+
+    & ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        & li a{
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
